@@ -22,14 +22,14 @@ public class Pong extends Actor
     }
 
     public void possoAndarParaCima(){
-        Actor Parede = getOneIntersectingObject(Parede.class);
+        Actor Parede = getOneIntersectingObject(BarraLateral.class);
         if(Parede==null){
             andarParaCima();
         }
     }
 
     public void possoAndarParaBaixo(){
-        Actor Parede2 = getOneIntersectingObject(Parede2.class);
+        Actor Parede2 = getOneIntersectingObject(BarraLateral.class);
         if(Parede2==null){
             andarParaBaixo();
         }
