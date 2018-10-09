@@ -20,6 +20,13 @@ public class Pong extends Actor
         possoAndarParaBaixo();
         ligarBoost();
     }
+    public Pong(){
+        GreenfootImage img = new GreenfootImage(15, 78);
+        img.setColor(Color.WHITE);
+        img.fillRect(0, 0,img.getWidth()-1, img.getHeight()-1);
+        setImage(img);
+        
+    }
 
     public void possoAndarParaCima(){
         Actor Parede = getOneIntersectingObject(BarraLateral.class);
