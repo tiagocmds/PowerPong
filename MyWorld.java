@@ -50,5 +50,11 @@ public class MyWorld extends World
         addObject(time2,459,9);
         BarraCentral barraCentral = new BarraCentral();
         addObject(barraCentral,358,195);
+         Pong2 pong2 = new Pong2();
+        addObject(pong2,541,198);
+        Pong pong = new Pong();
+        addObject(pong,58,201);
+        Bola bola = new Bola();
+        addObject(bola,255,199);
     }
 }
