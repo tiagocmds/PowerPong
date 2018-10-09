@@ -14,7 +14,7 @@ public class Pong extends Actor
      */
     public void act() 
     {
-        possoAndarParaCima();
+       /* possoAndarParaCima();
         possoAndarParaBaixo();
     }
     public void possoAndarParaCima(){
@@ -51,7 +51,7 @@ public class Pong extends Actor
         return 12;    
         }else{
         return 3;    
-        }
+        }*/
     }
         }
 

@@ -14,7 +14,7 @@ public class Pong2 extends Actor
      */
     public void act() 
     {
-        Actor Parede = getOneIntersectingObject(Parede.class);
+        /*Actor Parede = getOneIntersectingObject(Parede.class);
         Actor Parede2 = getOneIntersectingObject(Parede2.class);
         if(Parede==null){
             andarParaCima();
@@ -31,6 +31,6 @@ public class Pong2 extends Actor
     public void andarParaBaixo(){
            if(Greenfoot.isKeyDown("down")) {
                setLocation(getX(), getY() + 3);
-            }
+            }*/
         }
 }
