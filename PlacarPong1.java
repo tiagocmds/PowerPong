@@ -8,24 +8,24 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class PlacarPong1 extends Actor
 {
-    private int pontuacaoUm = 0;
+   private int pontuacaoUm = 0;
     
-    public PlacarPong1(){
+   public PlacarPong1(){
         atualizaImagem(pontuacaoUm);
-    }
+   }
     
-    public void addPontos(int valor){
+   public void addPontos(int valor){
        pontuacaoUm += valor; 
-    }
+   }
     
-    /**
-     * Act - do whatever the PlacarPong1 wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
-    {
-          atualizaImagem(pontuacaoUm);
-    }    
+   /**
+    * Act - do whatever the PlacarPong1 wants to do. This method is called whenever
+    * the 'Act' or 'Run' button gets pressed in the environment.
+    */
+   public void act() 
+   {
+        atualizaImagem(pontuacaoUm);
+   }    
     
     private void atualizaImagem(int valor){
         GreenfootImage Pong1 = new GreenfootImage(converteNumero(valor), 24, Color.WHITE, new Color(0,0,0,0),Color.BLACK);
@@ -34,5 +34,5 @@ public class PlacarPong1 extends Actor
    
    private String converteNumero(int valor){
        return String.format("%04d",valor);
-    }
+   }
 }
