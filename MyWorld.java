@@ -29,7 +29,7 @@ public class MyWorld extends World
 
         BarraLateral barraLateral = new BarraLateral();
         addObject(barraLateral,350,22);
-        BarraLateral barraLateral2 = new BarraLateral();
+        BarraLateral2 barraLateral2 = new BarraLateral2();
         addObject(barraLateral2,350,367);
         Score score = new Score();
         addObject(score,22,8);
@@ -50,10 +50,10 @@ public class MyWorld extends World
         addObject(time2,459,9);
         BarraCentral barraCentral = new BarraCentral();
         addObject(barraCentral,358,195);
-         Pong2 pong2 = new Pong2();
-        addObject(pong2,541,198);
+        Pong2 pong2 = new Pong2();
+        addObject(pong2,650,200);
         Pong pong = new Pong();
-        addObject(pong,58,201);
+        addObject(pong,50,200);
         Bola bola = new Bola();
         addObject(bola,255,199);
     }
