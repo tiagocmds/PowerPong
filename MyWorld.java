@@ -66,5 +66,5 @@ public class MyWorld extends World
         addObject(placarTime,486,10);
         placarTime.setLocation(491,5);
         placarTime.setLocation(495,9);
-}
+    }
 }

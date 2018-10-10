@@ -16,12 +16,19 @@ public class Bola extends Actor
     public void act()
     {
         move(15);
-        if(  (isTouching(BarraLateral.class) || isAtEdge()) & this.possoGirar ){
-            turn(190);
+        if((isTouching(BarraLateral.class) || isAtEdge()) && this.possoGirar){
+            turn(160);
             this.possoGirar = false;
         }        
         if(!isAtEdge() && !isTouching(BarraLateral.class)){
             this.possoGirar = true;
-        }       
+        }  
+        if((isTouching(BarraLateral2.class) || isAtEdge()) && this.possoGirar){
+            turn(160);
+            this.possoGirar = false;
+        } 
+        if(!isAtEdge() && !isTouching(BarraLateral2.class)){
+            this.possoGirar = true;
+        }
     }
 }
