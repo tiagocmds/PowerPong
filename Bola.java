@@ -31,16 +31,7 @@ public class Bola extends Actor
         somaPontoUm();
         somaPontoDois();
     }
-
-    /**
-     * 
-     */
-    public void marcaPontoUm()
-    {   if(getX()>=699){
-            
-        }
-    }
-
+    
     /**
      * 
      */
