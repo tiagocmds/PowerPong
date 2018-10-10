@@ -21,6 +21,13 @@ public class Pong2 extends Actor
         ligarBoost();
 
     }
+    public Pong2(){
+        GreenfootImage img = new GreenfootImage(15, 78);
+        img.setColor(Color.WHITE);
+        img.fillRect(0, 0,img.getWidth()-1, img.getHeight()-1);
+        setImage(img);
+        
+    }
 
     public void possoAndarParaCima(){
         Actor barralateral = getOneIntersectingObject(BarraLateral.class);

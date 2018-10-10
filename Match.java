@@ -14,7 +14,7 @@ public class Match extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        
     }  
      public Match(){
          GreenfootImage img = new GreenfootImage("Match.png");

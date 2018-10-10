@@ -47,6 +47,7 @@ public class Bola extends Actor
             andarDiagonalEC();
         }
     }
+    
     /**
      * 
      */
@@ -158,6 +159,13 @@ public class Bola extends Actor
     public void vaParaDiagonalEC()
     {
         this.possoAndarParaDiagonalEsquerdaCima = true;
+    }
+    public Bola(){
+        GreenfootImage img = new GreenfootImage(18, 18);
+        img.setColor(Color.WHITE);
+        img.fillRect(0, 0,img.getWidth()-1, img.getHeight()-1);
+        setImage(img);
+        
     }
 }
 

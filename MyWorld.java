@@ -50,11 +50,28 @@ public class MyWorld extends World
         addObject(time2,459,9);
         BarraCentral barraCentral = new BarraCentral();
         addObject(barraCentral,358,195);
+<<<<<<< HEAD
         Pong2 pong2 = new Pong2();
         addObject(pong2,650,200);
         Pong pong = new Pong();
         addObject(pong,50,200);
+=======
+        Pong pong = new Pong();
+        addObject(pong,13,201);
+        Pong2 pong2 = new Pong2();
+        addObject(pong2,687,199);
+>>>>>>> 22a4958c355cf8609d6cb52c20e44f7834d2e105
         Bola bola = new Bola();
-        addObject(bola,255,199);
-    }
+        addObject(bola,401,192);
+        PlacarPong1 placarPong1 = new PlacarPong1();
+        addObject(placarPong1,56,9);
+        PlacarPong2 placarPong2 = new PlacarPong2();
+        addObject(placarPong2,654,9);
+        PlacarMatch placarMatch = new PlacarMatch();
+        addObject(placarMatch,253,10);
+        PlacarTime placarTime = new PlacarTime();
+        addObject(placarTime,486,10);
+        placarTime.setLocation(491,5);
+        placarTime.setLocation(495,9);
+}
 }
