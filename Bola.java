@@ -28,5 +28,19 @@ public class Bola extends Actor
             vSpeed=-vSpeed;
         }
     }
+    
+       public void somaPontoUm(){
+        if(getX()>= 599){
+            MyWorld World =(MyWorld) getWorld();
+            World.acrescentaPontosUm(10);
+        }
+    }
+ 
+    public void somaPontoDois(){
+        if(getX()<=1){
+            MyWorld World = (MyWorld) getWorld();
+            World.acrescentaPontosDois(10);
+        }
+    }
 }
 
