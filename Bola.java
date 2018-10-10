@@ -8,25 +8,20 @@ import greenfoot.*;
 public class Bola extends Actor
 {
     /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
-    private int hSpeed = 3, vSpeed = 3;
+    private boolean possoGirar = true;
+    //private int sentido = -1;
     /**
      * 
      */
     public void act()
     {
-        setLocation(getX()+hSpeed, getY()+vSpeed);
-        if(getX()<5){
-            hSpeed=-hSpeed;
-        }
-        if(getY()<5){
-            vSpeed=-vSpeed;
-        }
-        if(getX()>getWorld().getWidth()-5){
-            hSpeed=-hSpeed;
-        }
-        if(getY() > getWorld().getHeight()-5){
-            vSpeed=-vSpeed;
-        }
+        move(15);
+        if(  (isTouching(BarraLateral.class) || isAtEdge()) & this.possoGirar ){
+            turn(190);
+            this.possoGirar = false;
+        }        
+        if(!isAtEdge() && !isTouching(BarraLateral.class)){
+            this.possoGirar = true;
+        }       
     }
 }
-
